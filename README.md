@@ -1,0 +1,2 @@
+# MogoTemplate
+Simple mogo template
