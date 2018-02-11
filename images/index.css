@@ -1,0 +1,5 @@
+.picture {
+  height: 100vh;
+  background: linear-gradient(rgba(239,146,138,0.8), rgba(234,211,131,0.8)),url(images/eagle.jpg) top no-repeat;
+  background-size: cover;
+}
