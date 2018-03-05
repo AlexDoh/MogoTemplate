@@ -2,10 +2,34 @@
 @import 'icons/iconfont-icon';
 @import 'variables';
 
+body {
+  font-family: $font-montserrat;
+}
+
 .top-container {
   height: 100vh;
-  background: linear-gradient(rgba($color-pink, 0.8), rgba($color-yellow-dark, 0.8)), url(../images/eagle.jpg) top no-repeat;
+  background: linear-gradient(rgba($color-pink, 0.8), rgba($color-yellow, 0.8)), url(../images/eagle.jpg) top no-repeat;
   background-size: cover;
+
+  &__main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-white;
+    text-align: center;
+  }
+
+  &__page-navigation {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $color-white;
+    margin-bottom: 30px;
+  }
 }
 
 .header {
@@ -32,7 +56,6 @@
   &__navigation-link {
     font-size: 14px;
     color: $color-white;
-    font-family: $font-montserrat;
     text-transform: uppercase;
     line-height: 1.2rem;
     margin-right: 50px;
@@ -55,5 +78,82 @@
     color: $color-white;
     display: inline-block;
     margin-right: 40px;
+  }
+}
+
+.main {
+  &__title {
+    font-size: 72px;
+    font-family: $font-kaushan;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 40px;
+    display: inline-block;
+  }
+
+  &__welcome {
+    position: relative;
+    font-size: 150px;
+    font-weight: bold;
+    line-height: 0.933;
+    display: inline-block;
+    margin-bottom: 100px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 3px;
+      background-color: $color-white;
+    }
+  }
+
+  &__learn {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.2;
+    border: 3px solid $color-white;
+    background: transparent;
+    padding: 15px 32px;
+    color: $color-white;
+  }
+}
+
+.page {
+  &__element {
+    display: inline-block;
+    position: relative;
+    width: 312px;
+    text-align: left;
+    opacity: 0.7;
+    &:after {
+      content: '';
+      opacity: 0.7;
+      position: absolute;
+      top: -20px;
+      width: 90%;
+      left: 0;
+      height: 3px;
+      background-color: $color-white;
+    }
+
+    &:hover {
+      opacity: 1;
+
+      &:after {
+        background-color: rgba($color-pink, 1);
+      }
+    }
+  }
+  &__number {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  &__name {
+    line-height: 1.2;
   }
 }
