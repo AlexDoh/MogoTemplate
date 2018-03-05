@@ -1,0 +1,59 @@
+@import 'icons/iconfont-varible';
+@import 'icons/iconfont-icon';
+@import 'variables';
+
+.top-container {
+  height: 100vh;
+  background: linear-gradient(rgba($color-pink, 0.8), rgba($color-yellow-dark, 0.8)), url(../images/eagle.jpg) top no-repeat;
+  background-size: cover;
+}
+
+.header {
+  &__logo {
+    position: relative;
+    left: 19%;
+    top: 30px;
+    color: $color-white;
+    font-family: $font-montserrat;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.2rem;
+  }
+
+  &__menu {
+    position: absolute;
+    left: 50%;
+  }
+
+  &__navigation {
+    display: inline-block;
+  }
+
+  &__navigation-link {
+    font-size: 14px;
+    color: $color-white;
+    font-family: $font-montserrat;
+    text-transform: uppercase;
+    line-height: 1.2rem;
+    margin-right: 50px;
+
+    &:hover {
+      display: inline-block;
+      color: $color-yellow;
+      border-bottom: 3px solid $color-yellow;
+      padding-bottom: 8px;
+      cursor: pointer;
+    }
+  }
+
+  &__activities {
+    display: inline-block;
+  }
+
+  &__activity-button {
+    font-size: 18px;
+    color: $color-white;
+    display: inline-block;
+    margin-right: 40px;
+  }
+}
