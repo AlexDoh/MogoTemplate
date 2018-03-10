@@ -19,6 +19,36 @@ $global-font-icon: 'myicons';
     /* Some common icon stuff */
   }
 
+                                    &.icon--alarm {
+  &:before {
+    content: $icon-alarm;
+  }
+}
+                                    &.icon--book {
+  &:before {
+    content: $icon-book;
+  }
+}
+                                    &.icon--computer-ok {
+  &:before {
+    content: $icon-computer-ok;
+  }
+}
+                                    &.icon--digital-square {
+  &:before {
+    content: $icon-digital-square;
+  }
+}
+                                    &.icon--home {
+  &:before {
+    content: $icon-home;
+  }
+}
+                                    &.icon--line-graph {
+  &:before {
+    content: $icon-line-graph;
+  }
+}
                                     &.icon--magnifying-glass {
   &:before {
     content: $icon-magnifying-glass;

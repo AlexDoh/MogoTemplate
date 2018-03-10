@@ -6,6 +6,7 @@ $color-white: #fff;
 $color-pink: rgb(243, 129, 129);
 $color-yellow: rgb(252, 227, 138);
 $color-grey: rgb(153, 153, 153);
-$color-black-about-us: rgb(51, 51, 51);
+$color-black-special: rgb(51, 51, 51);
 $color-cyan: rgb(149, 225, 211);
-$color-white-transparent: rgba(#fff, 0.302)
+$color-white-transparent: rgba($color-white, 0.302);
+$color-grey-separator: rgb(229, 229, 229);
