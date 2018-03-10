@@ -9,61 +9,116 @@
     <link rel="stylesheet" href="_build/assets/css/index.css"/>
 </head>
 <body>
-<div class="top-container">
-    <header class="top-container__header">
-        <span class="header__logo">MoGo</span>
-        <div class="header__menu">
-            <nav class="header__navigation">
-                <span class="header__navigation-link">ABOUT</span>
-                <span class="header__navigation-link">SERVICE</span>
-                <span class="header__navigation-link">WORK</span>
-                <span class="header__navigation-link">BLOG</span>
-                <span class="header__navigation-link">CONTACT</span>
-            </nav>
-            <div class="header__activities">
-                <div class="icon icon--shopping-cart header__activity-button"></div>
-                <div class="icon icon--magnifying-glass header__activity-button"></div>
+<header>
+    <div class="top-container center-content">
+        <div class="top-container__menu">
+            <span class="menu__logo">MoGo</span>
+            <div class="menu__links">
+                <nav class="menu__navigation">
+                    <span class="menu__navigation-link">ABOUT</span>
+                    <span class="menu__navigation-link">SERVICE</span>
+                    <span class="menu__navigation-link">WORK</span>
+                    <span class="menu__navigation-link">BLOG</span>
+                    <span class="menu__navigation-link">CONTACT</span>
+                </nav>
+                <div class="menu__activities">
+                    <div class="icon icon--shopping-cart menu__activity-button"></div>
+                    <div class="icon icon--magnifying-glass menu__activity-button"></div>
+                </div>
             </div>
         </div>
-    </header>
-    <div class="top-container__main">
-        <span class="main__title">Creative Template</span>
-        <span class="main__welcome">WELCOME TO MOGO</span>
-        <button class="main__learn">LEARN MORE</button>
+        <div class="top-container__main">
+            <span class="main__title">Creative Template</span>
+            <span class="main__welcome">WELCOME TO MOGO</span>
+            <button class="main__learn">LEARN MORE</button>
+        </div>
+        <div class="top-container__page-navigation">
+            <div class="page__element">
+                <span class="page__number">01</span>
+                <span class="page__name">INTRO</span>
+            </div>
+            <div class="page__element">
+                <span class="page__number">02</span>
+                <span class="page__name">WORK</span>
+            </div>
+            <div class="page__element">
+                <span class="page__number">03</span>
+                <span class="page__name">ABOUT</span>
+            </div>
+            <div class="page__element">
+                <span class="page__number">04</span>
+                <span class="page__name">CONTACTS</span>
+            </div>
+        </div>
     </div>
-    <div class="top-container__page-navigation">
-        <div class="page__element">
-            <span class="page__number">01</span>
-            <span class="page__name">INTRO</span>
+</header>
+<div class="about-us-container center-content">
+    <span class="about-us-container__title">What we do</span>
+    <span class="about-us-container__name">STORY ABOUT US</span>
+    <span class="about-us-container__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+    ut aliquip ex ea commodo consequat.
+    </span>
+    <div class="about-us-container__image-container">
+        <div class="about-us-container__element_wrap">
+            <div class="about-us-container__image-block">
+                <img class="about-us-container__image" src="images/about-us-1.jpg">
+                <div class="about-us-container__image-icon icon icon--users">SUPER TEAM</div>
+            </div>
         </div>
-        <div class="page__element">
-            <span class="page__number">02</span>
-            <span class="page__name">WORK</span>
+        <div class="about-us-container__element_wrap">
+            <div class="about-us-container__image-block">
+                <img class="about-us-container__image" src="images/about-us-2.jpg">
+                <div class="about-us-container__image-icon icon icon--users">SUPER TEAM</div>
+            </div>
         </div>
-        <div class="page__element">
-            <span class="page__number">03</span>
-            <span class="page__name">ABOUT</span>
-        </div>
-        <div class="page__element">
-            <span class="page__number">04</span>
-            <span class="page__name">CONTACTS</span>
+        <div class="about-us-container__element_wrap">
+            <div class="about-us-container__image-block">
+                <img class="about-us-container__image" src="images/about-us-3.jpg">
+                <div class="about-us-container__image-icon icon icon--users">SUPER TEAM</div>
+            </div>
         </div>
     </div>
 </div>
-<svg viewBox="0 0 100 100">
-    <use xlink:href="#magnifying-glass"></use>
-</svg>
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg">
-    <symbol id="magnifying-glass">
-        <path fill-rule="evenodd" fill="#FFF"
-              d="M17.317 14.983a1.65 1.65 0 0 1-2.334 2.333l-4.836-4.835A6.56 6.56 0 0 1 6.8 13.4a6.6 6.6 0 1 1 6.6-6.6 6.56 6.56 0 0 1-.919 3.347l4.836 4.836zM6.8 1.85a4.95 4.95 0 1 0 0 9.9 4.95 4.95 0 0 0 0-9.9z"/>
-    </symbol>
-    <symbol id="shopping-cart">
-        <path fill-rule="evenodd" fill="#FFF"
-              d="M17.726 3.663h.001l-2.475 5.5a.824.824 0 0 1-.697.485l-7.128.475.412 1.176H15.6a1.651 1.651 0 1 1-1.65 1.651h-7.7a1.65 1.65 0 1 1-1.65-1.651h1.491L2.915 2.225h-1.89a.825.825 0 0 1 0-1.65H3.5c.36 0 .663.232.776.553l.003-.001.48 1.373h12.216a.825.825 0 0 1 .751 1.163zM5.337 4.15l1.525 4.357 7.089-.473 1.748-3.884H5.337z"/>
-    </symbol>
-</svg>
+<div class="facts">
+    <div class="facts__content center-content">
+        <div class="facts__block">
+            <span class="facts__number">42</span>
+            <span class="facts__name">WEB DESIGN PROJECTS</span>
+        </div>
+        <div class="facts__block">
+            <span class="facts__number">123</span>
+            <span class="facts__name">HAPPY CLIENT</span>
+        </div>
+        <div class="facts__block">
+            <span class="facts__number">15</span>
+            <span class="facts__name">AWARD WINNER</span>
+        </div>
+        <div class="facts__block">
+            <span class="facts__number">99</span>
+            <span class="facts__name">CUP OF COFFEE</span>
+        </div>
+        <div class="facts__block">
+            <span class="facts__number">24</span>
+            <span class="facts__name">MEMBERS</span>
+        </div>
+    </div>
+</div>
+<div class="service center-content"></div>
+<!--<svg viewBox="0 0 100 100">-->
+<!--<use xlink:href="#magnifying-glass"></use>-->
+<!--</svg>-->
+<!--<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"-->
+<!--"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">-->
+<!--<svg xmlns="http://www.w3.org/2000/svg">-->
+<!--<symbol id="magnifying-glass">-->
+<!--<path fill-rule="evenodd" fill="#FFF"-->
+<!--d="M17.317 14.983a1.65 1.65 0 0 1-2.334 2.333l-4.836-4.835A6.56 6.56 0 0 1 6.8 13.4a6.6 6.6 0 1 1 6.6-6.6 6.56 6.56 0 0 1-.919 3.347l4.836 4.836zM6.8 1.85a4.95 4.95 0 1 0 0 9.9 4.95 4.95 0 0 0 0-9.9z"/>-->
+<!--</symbol>-->
+<!--<symbol id="shopping-cart">-->
+<!--<path fill-rule="evenodd" fill="#FFF"-->
+<!--d="M17.726 3.663h.001l-2.475 5.5a.824.824 0 0 1-.697.485l-7.128.475.412 1.176H15.6a1.651 1.651 0 1 1-1.65 1.651h-7.7a1.65 1.65 0 1 1-1.65-1.651h1.491L2.915 2.225h-1.89a.825.825 0 0 1 0-1.65H3.5c.36 0 .663.232.776.553l.003-.001.48 1.373h12.216a.825.825 0 0 1 .751 1.163zM5.337 4.15l1.525 4.357 7.089-.473 1.748-3.884H5.337z"/>-->
+<!--</symbol>-->
+<!--</svg>-->
 </body>
 </html>

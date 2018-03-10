@@ -29,5 +29,10 @@ $global-font-icon: 'myicons';
     content: $icon-shopping-cart;
   }
 }
+                                    &.icon--users {
+  &:before {
+    content: $icon-users;
+  }
+}
 
 }
