@@ -715,7 +715,7 @@ header {
   &__content {
     position: relative;
     padding-top: 80px;
-    padding-bottom: 70px;
+    padding-bottom: 160px;
 
     &:before {
       position: absolute;
@@ -780,5 +780,24 @@ header {
       height: 3px;
       background-color: $color-pink;
     }
+  }
+}
+
+.responses {
+  padding: 105px 0 130px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  text-align: center;
+  background: linear-gradient($color-white-transparent2, $color-white-transparent2), url(../images/responses.jpg) center no-repeat;
+  background-size: cover;
+
+  &__name {
+    margin-bottom: 62px;
+  }
+
+  &__container {
+    padding: 80px 0;
+    display: flex;
   }
 }
