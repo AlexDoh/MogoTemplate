@@ -58,9 +58,19 @@ $global-font-icon: 'myicons';
     content: $icon-equalizer;
   }
 }
+                                    &.icon-before--facebook {
+  &:before {
+    content: $icon-facebook;
+  }
+}
                                     &.icon-before--home {
   &:before {
     content: $icon-home;
+  }
+}
+                                    &.icon-before--instagram {
+  &:before {
+    content: $icon-instagram;
   }
 }
                                     &.icon-before--line-graph {
@@ -78,9 +88,19 @@ $global-font-icon: 'myicons';
     content: $icon-photography;
   }
 }
+                                    &.icon-before--pinterest {
+  &:before {
+    content: $icon-pinterest;
+  }
+}
                                     &.icon-before--shopping-cart {
   &:before {
     content: $icon-shopping-cart;
+  }
+}
+                                    &.icon-before--twitter {
+  &:before {
+    content: $icon-twitter;
   }
 }
                                     &.icon-before--users {
@@ -130,9 +150,19 @@ $global-font-icon: 'myicons';
     content: $icon-equalizer;
   }
 }
+                                    &.icon-after--facebook {
+  &:after {
+    content: $icon-facebook;
+  }
+}
                                     &.icon-after--home {
   &:after {
     content: $icon-home;
+  }
+}
+                                    &.icon-after--instagram {
+  &:after {
+    content: $icon-instagram;
   }
 }
                                     &.icon-after--line-graph {
@@ -150,9 +180,19 @@ $global-font-icon: 'myicons';
     content: $icon-photography;
   }
 }
+                                    &.icon-after--pinterest {
+  &:after {
+    content: $icon-pinterest;
+  }
+}
                                     &.icon-after--shopping-cart {
   &:after {
     content: $icon-shopping-cart;
+  }
+}
+                                    &.icon-after--twitter {
+  &:after {
+    content: $icon-twitter;
   }
 }
                                     &.icon-after--users {
