@@ -88,6 +88,11 @@ $global-font-icon: 'myicons';
     content: $icon-photography;
   }
 }
+                                    &.icon-before--picture {
+  &:before {
+    content: $icon-picture;
+  }
+}
                                     &.icon-before--pinterest {
   &:before {
     content: $icon-pinterest;
@@ -178,6 +183,11 @@ $global-font-icon: 'myicons';
                                     &.icon-after--photography {
   &:after {
     content: $icon-photography;
+  }
+}
+                                    &.icon-after--picture {
+  &:after {
+    content: $icon-picture;
   }
 }
                                     &.icon-after--pinterest {

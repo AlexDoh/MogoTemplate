@@ -86,6 +86,15 @@ header {
   width: 50%;
 }
 
+.grid-2-rows {
+  grid-row: 1/3;
+  grid-column: 3/4;
+
+  &:hover {
+    z-index: 1;
+  }
+}
+
 .top {
   display: flex;
   flex-direction: column;
@@ -285,7 +294,6 @@ header {
       bottom: 150%;
     }
   }
-
 }
 
 .facts {
@@ -632,4 +640,71 @@ header {
   padding: 60px;
   text-align: center;
   background-color: $color-grey-background;
+}
+
+.work {
+  padding: 100px 0 120px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  text-align: center;
+
+  &__description {
+    width: 80%;
+    margin: 48px auto auto;
+  }
+
+  &__image-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 105px;
+    margin-bottom: 100px;
+  }
+
+  &__image-block-wrap {
+    max-width: none;
+  }
+
+  &__image-block:hover {
+    .work__image-content {
+      display: block;
+    }
+  }
+
+  &__image-content {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    color: $color-white;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+
+    &:before {
+      position: absolute;
+      left: 50%;
+      bottom: 150%;
+    }
+  }
+
+  &__image-name {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  &__image-description {
+    font-size: 15px;
+    font-family: $font-roboto;
+    font-style: italic;
+    line-height: 1.6;
+    text-align: center;
+  }
 }
