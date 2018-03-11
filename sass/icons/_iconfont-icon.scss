@@ -19,48 +19,135 @@ $global-font-icon: 'myicons';
     /* Some common icon stuff */
   }
 
-                                    &.icon--alarm {
+                                    &.icon-before--alarm {
   &:before {
     content: $icon-alarm;
   }
 }
-                                    &.icon--book {
+                                    &.icon-before--arrow-up {
+  &:before {
+    content: $icon-arrow-up;
+  }
+}
+                                    &.icon-before--book {
   &:before {
     content: $icon-book;
   }
 }
-                                    &.icon--computer-ok {
+                                    &.icon-before--bullseye {
+  &:before {
+    content: $icon-bullseye;
+  }
+}
+                                    &.icon-before--computer-ok {
   &:before {
     content: $icon-computer-ok;
   }
 }
-                                    &.icon--digital-square {
+                                    &.icon-before--digital-square {
   &:before {
     content: $icon-digital-square;
   }
 }
-                                    &.icon--home {
+                                    &.icon-before--equalizer {
+  &:before {
+    content: $icon-equalizer;
+  }
+}
+                                    &.icon-before--home {
   &:before {
     content: $icon-home;
   }
 }
-                                    &.icon--line-graph {
+                                    &.icon-before--line-graph {
   &:before {
     content: $icon-line-graph;
   }
 }
-                                    &.icon--magnifying-glass {
+                                    &.icon-before--magnifying-glass {
   &:before {
     content: $icon-magnifying-glass;
   }
 }
-                                    &.icon--shopping-cart {
+                                    &.icon-before--photography {
+  &:before {
+    content: $icon-photography;
+  }
+}
+                                    &.icon-before--shopping-cart {
   &:before {
     content: $icon-shopping-cart;
   }
 }
-                                    &.icon--users {
+                                    &.icon-before--users {
   &:before {
+    content: $icon-users;
+  }
+}
+
+
+                                    &.icon-after--alarm {
+  &:after {
+    content: $icon-alarm;
+  }
+}
+                                    &.icon-after--arrow-up {
+  &:after {
+    content: $icon-arrow-up;
+  }
+}
+                                    &.icon-after--book {
+  &:after {
+    content: $icon-book;
+  }
+}
+                                    &.icon-after--bullseye {
+  &:after {
+    content: $icon-bullseye;
+  }
+}
+                                    &.icon-after--computer-ok {
+  &:after {
+    content: $icon-computer-ok;
+  }
+}
+                                    &.icon-after--digital-square {
+  &:after {
+    content: $icon-digital-square;
+  }
+}
+                                    &.icon-after--equalizer {
+  &:after {
+    content: $icon-equalizer;
+  }
+}
+                                    &.icon-after--home {
+  &:after {
+    content: $icon-home;
+  }
+}
+                                    &.icon-after--line-graph {
+  &:after {
+    content: $icon-line-graph;
+  }
+}
+                                    &.icon-after--magnifying-glass {
+  &:after {
+    content: $icon-magnifying-glass;
+  }
+}
+                                    &.icon-after--photography {
+  &:after {
+    content: $icon-photography;
+  }
+}
+                                    &.icon-after--shopping-cart {
+  &:after {
+    content: $icon-shopping-cart;
+  }
+}
+                                    &.icon-after--users {
+  &:after {
     content: $icon-users;
   }
 }

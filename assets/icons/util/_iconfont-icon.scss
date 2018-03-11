@@ -19,8 +19,15 @@ $global-font-icon: '<%= fontName %>';
     /* Some common icon stuff */
   }
 <% _.each(glyphs, function(glyph) { %>
-                                    &.icon--<%= glyph.name %> {
+                                    &.icon-before--<%= glyph.name %> {
   &:before {
+    content: $icon-<%= glyph.name %>;
+  }
+}<% }); %>
+
+<% _.each(glyphs, function(glyph) { %>
+                                    &.icon-after--<%= glyph.name %> {
+  &:after {
     content: $icon-<%= glyph.name %>;
   }
 }<% }); %>

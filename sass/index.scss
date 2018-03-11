@@ -51,6 +51,10 @@ header {
   margin: auto;
 }
 
+.half {
+  width: 50%;
+}
+
 .top {
   display: flex;
   flex-direction: column;
@@ -396,6 +400,108 @@ header {
     width: 80%;
     margin: 48px auto auto;
   }
+
+  &__content {
+    margin-top: 95px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__image {
+    display: block;
+    width: 48%;
+  }
+
+  &__accordion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
+.accordion {
+  &__element {
+    border-right: 1px solid $color-grey-separator;
+    border-left: 1px solid $color-grey-separator;
+  }
 
+  &__input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  &__label {
+    position: relative;
+    font-size: 14px;
+    color: $color-black-special;
+    text-transform: uppercase;
+    line-height: 1.2;
+    cursor: pointer;
+    border-top: 1px solid $color-grey-separator;
+    padding: 21px 60px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+
+    &:before {
+      position: absolute;
+      left: 5%;
+      font-size: 30px;
+      color: $color-cyan;
+    }
+
+    &:after {
+      position: absolute;
+      color: $color-grey-arrow;
+      right: 5%;
+      transition-duration: 0.5s;
+    }
+  }
+
+  &__content {
+    padding: 0 25px 0 20px;
+  }
+
+  &__text {
+    display: block;
+    max-height: 0;
+    overflow-y: scroll;
+    transition: max-height .5s;
+    font-size: 15px;
+    font-family: $font-roboto;
+    color: $color-grey;
+    font-style: italic;
+    line-height: 1.6;
+    text-align: left;
+
+    &::-webkit-scrollbar {
+      margin: 5px 0;
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #f5f5f5;
+      border-radius: 10px;
+
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #95e1d3;
+      border-radius: 10px;
+    }
+  }
+
+  &__input:checked + &__label:after {
+    transform: rotate(180deg);
+  }
+
+  &__input:checked ~ &__content {
+    border-top: 1px solid $color-grey-separator;
+  }
+
+  &__input:checked ~ &__content &__text {
+    margin: 25px 0;
+    max-height: 10em;
+  }
+}
