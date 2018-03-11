@@ -643,11 +643,14 @@ header {
 }
 
 .work {
-  padding: 100px 0 120px 0;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  text-align: center;
+
+  &__container {
+    padding: 100px 0 120px 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    text-align: center;
+  }
 
   &__description {
     width: 80%;
@@ -657,8 +660,7 @@ header {
   &__image-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    margin-top: 105px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
   }
 
   &__image-block-wrap {
@@ -706,5 +708,77 @@ header {
     font-style: italic;
     line-height: 1.6;
     text-align: center;
+  }
+}
+
+.testimonial {
+  &__content {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 70px;
+
+    &:before {
+      position: absolute;
+      left: 1%;
+      top: 50%;
+      transform: rotate(-90deg) translateY(-50%);
+      color: $color-grey-arrow;
+    }
+
+    &:after {
+      position: absolute;
+      right: 1%;
+      top: 50%;
+      transform: rotate(90deg) translateY(-50%);
+      color: $color-grey-arrow;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    margin-left: 27%;
+    margin-right: 6%;
+  }
+
+  &__text {
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-family: $font-roboto;
+    color: $color-grey;
+    font-style: italic;
+    line-height: 1.5;
+    text-align: left;
+
+    &:before {
+      content: '';
+      position: absolute;
+      padding: 105px;
+      font-style: normal;
+      font-size: 64px;
+      color: $color-cyan;
+      left: 15%;
+      transform: translate(-50%, -10%);
+      background: url(../images/testimonial.jpg);
+    }
+  }
+
+  &__signature {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-family: $font-kaushan;
+    color: $color-black-special;
+    line-height: 1.2;
+    text-align: left;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      margin-right: 10px;
+      width: 60px;
+      height: 3px;
+      background-color: $color-pink;
+    }
   }
 }
