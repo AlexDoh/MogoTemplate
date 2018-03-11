@@ -46,7 +46,7 @@ header {
   line-height: 1.6;
 }
 
-.topic__image {
+.topic-image {
   display: block;
   width: 100%;
   height: auto;
@@ -570,6 +570,7 @@ header {
     }
   }
 }
+
 .team {
   padding: 100px 0 120px 0;
   display: flex;
@@ -625,4 +626,10 @@ header {
       background-color: $color-pink;
     }
   }
+}
+
+.logos {
+  padding: 60px;
+  text-align: center;
+  background-color: $color-grey-background;
 }
