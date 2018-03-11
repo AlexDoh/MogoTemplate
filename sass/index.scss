@@ -46,6 +46,40 @@ header {
   line-height: 1.6;
 }
 
+.topic__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.topic-image-block-wrap {
+  position: relative;
+  display: block;
+  max-width: 31%;
+  background-color: $color-cyan;
+}
+
+.topic-image-block {
+  transition: all ease 1s;
+
+  &:hover {
+    transform: translate(-10px, -10px);
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(rgba(243, 129, 129, .9), rgba(252, 227, 138, .9));
+    }
+    .about-us__image-icon {
+      display: block;
+    }
+  }
+}
+
 .center-content {
   max-width: 1200px;
   margin: auto;
@@ -231,41 +265,6 @@ header {
 
   }
 
-  &__element_wrap {
-    position: relative;
-    display: block;
-    max-width: 31%;
-    background-color: $color-cyan;
-  }
-
-  &__image-block {
-    transition: all ease 1s;
-
-    &:hover {
-      transform: translate(-10px, -10px);
-
-      &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(rgba(243, 129, 129, .9), rgba(252, 227, 138, .9));
-      }
-      .about-us__image-icon {
-        display: block;
-      }
-    }
-  }
-
-  &__image {
-    display: block;
-    width: 100%;
-    height: auto;
-
-  }
-
   &__image-icon {
     display: none;
     position: absolute;
@@ -285,11 +284,6 @@ header {
     }
   }
 
-  //@for $i from 1 through 3 {
-  //  &__image:nth-of-type(#{$i}) {
-  //    background: url(../images/about-us-#{$i}.jpg) top no-repeat;
-  //  }
-  //}
 }
 
 .facts {
@@ -421,8 +415,7 @@ header {
 
 .accordion {
   &__element {
-    border-right: 1px solid $color-grey-separator;
-    border-left: 1px solid $color-grey-separator;
+    border: 1px solid $color-grey-separator;
   }
 
   &__input {
@@ -438,7 +431,6 @@ header {
     text-transform: uppercase;
     line-height: 1.2;
     cursor: pointer;
-    border-top: 1px solid $color-grey-separator;
     padding: 21px 60px;
     text-align: left;
     display: flex;
@@ -476,18 +468,16 @@ header {
     text-align: left;
 
     &::-webkit-scrollbar {
-      margin: 5px 0;
       width: 5px;
     }
 
     &::-webkit-scrollbar-track {
-      background: #f5f5f5;
+      background: $color-grey-background;
       border-radius: 10px;
-
     }
 
     &::-webkit-scrollbar-thumb {
-      background: #95e1d3;
+      background: $color-cyan;
       border-radius: 10px;
     }
   }
@@ -501,7 +491,92 @@ header {
   }
 
   &__input:checked ~ &__content &__text {
-    margin: 25px 0;
+    margin: 15px 0;
     max-height: 10em;
+  }
+}
+
+.quote {
+  background-color: $color-grey-background;
+
+  &__content {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 70px;
+
+    &:before {
+      position: absolute;
+      left: 1%;
+      top: 50%;
+      transform: rotate(-90deg) translateY(-50%);
+      color: $color-grey-arrow;
+    }
+
+    &:after {
+      position: absolute;
+      right: 1%;
+      top: 50%;
+      transform: rotate(90deg) translateY(-50%);
+      color: $color-grey-arrow;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    margin-left: 27%;
+    margin-right: 6%;
+  }
+
+  &__text {
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-family: $font-roboto;
+    color: $color-grey;
+    font-style: italic;
+    line-height: 1.5;
+    text-align: left;
+
+    &:before {
+      position: absolute;
+      padding: 25px 75px;
+      font-style: normal;
+      font-size: 64px;
+      color: $color-cyan;
+      left: 15%;
+      transform: translateX(-50%);
+      border: 3px solid $color-cyan;
+    }
+  }
+
+  &__signature {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-family: $font-kaushan;
+    color: $color-black-special;
+    line-height: 1.2;
+    text-align: left;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      margin-right: 10px;
+      width: 60px;
+      height: 3px;
+      background-color: $color-pink;
+    }
+  }
+}
+.team {
+  padding: 100px 0 120px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  text-align: center;
+
+  &__description {
+    width: 80%;
+    margin: 48px auto auto;
   }
 }

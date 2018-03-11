@@ -13,10 +13,9 @@ $global-font-icon: 'myicons';
 }
 
 .icon {
-  font-family: $global-font-icon;
 
-  &:before {
-    /* Some common icon stuff */
+  &:before, &:after {
+    font-family: $global-font-icon;
   }
 
                                     &.icon-before--alarm {
@@ -32,6 +31,11 @@ $global-font-icon: 'myicons';
                                     &.icon-before--book {
   &:before {
     content: $icon-book;
+  }
+}
+                                    &.icon-before--bubbles {
+  &:before {
+    content: $icon-bubbles;
   }
 }
                                     &.icon-before--bullseye {
@@ -99,6 +103,11 @@ $global-font-icon: 'myicons';
                                     &.icon-after--book {
   &:after {
     content: $icon-book;
+  }
+}
+                                    &.icon-after--bubbles {
+  &:after {
+    content: $icon-bubbles;
   }
 }
                                     &.icon-after--bullseye {
