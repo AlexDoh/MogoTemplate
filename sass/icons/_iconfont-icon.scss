@@ -33,6 +33,11 @@ $global-font-icon: 'myicons';
     content: $icon-book;
   }
 }
+                                    &.icon-before--bubble {
+  &:before {
+    content: $icon-bubble;
+  }
+}
                                     &.icon-before--bubbles {
   &:before {
     content: $icon-bubbles;
@@ -56,6 +61,11 @@ $global-font-icon: 'myicons';
                                     &.icon-before--equalizer {
   &:before {
     content: $icon-equalizer;
+  }
+}
+                                    &.icon-before--eye {
+  &:before {
+    content: $icon-eye;
   }
 }
                                     &.icon-before--facebook {
@@ -130,6 +140,11 @@ $global-font-icon: 'myicons';
     content: $icon-book;
   }
 }
+                                    &.icon-after--bubble {
+  &:after {
+    content: $icon-bubble;
+  }
+}
                                     &.icon-after--bubbles {
   &:after {
     content: $icon-bubbles;
@@ -153,6 +168,11 @@ $global-font-icon: 'myicons';
                                     &.icon-after--equalizer {
   &:after {
     content: $icon-equalizer;
+  }
+}
+                                    &.icon-after--eye {
+  &:after {
+    content: $icon-eye;
   }
 }
                                     &.icon-after--facebook {
