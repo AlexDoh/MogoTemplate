@@ -88,6 +88,46 @@ $global-font-icon: 'myicons';
     content: $icon-line-graph;
   }
 }
+                                    &.icon-before--link-dribbble {
+  &:before {
+    content: $icon-link-dribbble;
+  }
+}
+                                    &.icon-before--link-facebook {
+  &:before {
+    content: $icon-link-facebook;
+  }
+}
+                                    &.icon-before--link-google-plus {
+  &:before {
+    content: $icon-link-google-plus;
+  }
+}
+                                    &.icon-before--link-instagram {
+  &:before {
+    content: $icon-link-instagram;
+  }
+}
+                                    &.icon-before--link-pinterest {
+  &:before {
+    content: $icon-link-pinterest;
+  }
+}
+                                    &.icon-before--link-tumblr {
+  &:before {
+    content: $icon-link-tumblr;
+  }
+}
+                                    &.icon-before--link-twitter {
+  &:before {
+    content: $icon-link-twitter;
+  }
+}
+                                    &.icon-before--link-youtube {
+  &:before {
+    content: $icon-link-youtube;
+  }
+}
                                     &.icon-before--magnifying-glass {
   &:before {
     content: $icon-magnifying-glass;
@@ -198,6 +238,46 @@ $global-font-icon: 'myicons';
                                     &.icon-after--line-graph {
   &:after {
     content: $icon-line-graph;
+  }
+}
+                                    &.icon-after--link-dribbble {
+  &:after {
+    content: $icon-link-dribbble;
+  }
+}
+                                    &.icon-after--link-facebook {
+  &:after {
+    content: $icon-link-facebook;
+  }
+}
+                                    &.icon-after--link-google-plus {
+  &:after {
+    content: $icon-link-google-plus;
+  }
+}
+                                    &.icon-after--link-instagram {
+  &:after {
+    content: $icon-link-instagram;
+  }
+}
+                                    &.icon-after--link-pinterest {
+  &:after {
+    content: $icon-link-pinterest;
+  }
+}
+                                    &.icon-after--link-tumblr {
+  &:after {
+    content: $icon-link-tumblr;
+  }
+}
+                                    &.icon-after--link-twitter {
+  &:after {
+    content: $icon-link-twitter;
+  }
+}
+                                    &.icon-after--link-youtube {
+  &:after {
+    content: $icon-link-youtube;
   }
 }
                                     &.icon-after--magnifying-glass {

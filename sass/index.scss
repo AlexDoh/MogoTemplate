@@ -982,8 +982,119 @@ header {
   }
 }
 
-footer {
+.footer {
   padding-top: 75px;
-  display: flex;
-  justify-content: space-between;
+  padding-bottom: 70px;
+  background-color: $color-grey-background;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__mogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.mogo {
+  &__title {
+    margin-bottom: 45px;
+    font-size: 46px;
+    color: $color-grey-arrow;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+
+  &__description {
+    width: 79%;
+    margin-bottom: 50px;
+    font-size: 15px;
+    font-family: $font-roboto;
+    color: $color-grey;
+    line-height: 1.6;
+    text-align: left;
+  }
+}
+
+.mogo-followers {
+
+  &__count {
+    padding-bottom: 20px;
+    border-bottom: 1px solid $color-grey-separator;
+  }
+
+  &__number {
+    font-size: 18px;
+    color: $color-black-special;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  &__links {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: flex;
+  }
+
+  &__links-text {
+    margin-right: 24px;
+    font-size: 15px;
+    font-family: $font-roboto;
+    color: $color-grey;
+    font-style: italic;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  &__link {
+    padding: 0 15px;
+
+    &:before {
+      font-size: 18px;
+      color: $color-cyan;
+    }
+  }
+}
+
+.mogo-subscribe {
+  &__input-wrap {
+    display: inline-block;
+    width: 39%;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 15px 0 15px 15px;
+    border: 1px solid $color-grey-input-border;
+
+    &::placeholder {
+      font-size: 15px;
+      font-family: $font-roboto;
+      color: $color-grey-arrow;
+      font-style: italic;
+      line-height: 1.6;
+      text-align: left;
+    }
+  }
+
+  &__button {
+    display: inline-block;
+    padding: 16px 35px;
+    background-color: $color-cyan;
+    border: none;
+    color: $color-white;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
 }
