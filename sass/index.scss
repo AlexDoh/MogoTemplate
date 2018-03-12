@@ -944,3 +944,46 @@ header {
     }
   }
 }
+
+.map {
+  padding: 100px 0 82px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient($color-white-transparent2, $color-white-transparent2), url(../images/map.jpg) center no-repeat;
+  background-size: cover;
+
+  &__title {
+    position: relative;
+    font-size: 24px;
+    color: $color-pink;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+
+    &:before {
+      position: absolute;
+      left: 50%;
+      bottom: 150%;
+      transform: translateX(-50%);
+      color: $color-pink;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 150%;
+      width: 60px;
+      height: 3px;
+      background-color: $color-pink;
+    }
+  }
+}
+
+footer {
+  padding-top: 75px;
+  display: flex;
+  justify-content: space-between;
+}

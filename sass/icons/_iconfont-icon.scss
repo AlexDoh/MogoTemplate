@@ -93,6 +93,11 @@ $global-font-icon: 'myicons';
     content: $icon-magnifying-glass;
   }
 }
+                                    &.icon-before--marker {
+  &:before {
+    content: $icon-marker;
+  }
+}
                                     &.icon-before--photography {
   &:before {
     content: $icon-photography;
@@ -198,6 +203,11 @@ $global-font-icon: 'myicons';
                                     &.icon-after--magnifying-glass {
   &:after {
     content: $icon-magnifying-glass;
+  }
+}
+                                    &.icon-after--marker {
+  &:after {
+    content: $icon-marker;
   }
 }
                                     &.icon-after--photography {
