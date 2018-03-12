@@ -984,13 +984,14 @@ header {
 
 .footer {
   padding-top: 75px;
-  padding-bottom: 70px;
   background-color: $color-grey-background;
 
   &__container {
+    padding-bottom: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid $color-grey-separator;
   }
 
   &__mogo {
@@ -998,10 +999,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-
-  &__footer {
-
   }
 }
 
@@ -1151,6 +1148,33 @@ header {
     font-size: 13px;
     font-family: $font-roboto;
     color: $color-grey;
+    font-style: italic;
+    line-height: 1.846;
+    text-align: left;
+  }
+}
+
+.footer-instagram {
+  &__title {
+    margin-bottom: 40px;
+    font-size: 14px;
+    color: $color-black-special;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  &__grid-container {
+    margin-bottom: 65px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 3px;
+  }
+
+  &__link {
+    font-size: 13px;
+    font-family: $font-roboto;
+    color: $color-black-special;
     font-style: italic;
     line-height: 1.846;
     text-align: left;
