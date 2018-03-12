@@ -1000,6 +1000,11 @@ header {
     flex-direction: column;
     justify-content: space-between;
   }
+
+  &__copyright {
+    padding: 25px 0;
+    text-align: center;
+  }
 }
 
 .mogo {
@@ -1178,5 +1183,24 @@ header {
     font-style: italic;
     line-height: 1.846;
     text-align: left;
+  }
+}
+
+.footer-copyright {
+  &__info {
+    position: relative;
+    font-size: 14px;
+    color: $color-black-special;
+    line-height: 1.2;
+
+    &:before {
+      content: '\00A9';
+      position: absolute;
+      left: -7%;
+      transform: translateY(5%);
+    }
+  }
+  &__author {
+    color: $color-pink;
   }
 }
